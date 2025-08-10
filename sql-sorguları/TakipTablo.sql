@@ -1,0 +1,7 @@
+CREATE TABLE Takip (
+    TakipID INT PRIMARY KEY IDENTITY,
+    UyeID INT,
+    Giris DATETIME,
+    Cikis DATETIME,
+    FOREIGN KEY (UyeID) REFERENCES Uye(UyeID)
+);
